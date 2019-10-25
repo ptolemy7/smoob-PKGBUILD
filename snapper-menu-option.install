@@ -11,9 +11,8 @@
 ## arg 1:  the new package version
 post_install() {
 	echo "user beware: this script was written by someone who doesn't know what they are doing"
-	echo "install at your own risk and be prepared to tinker with the script, which is installed at /usr/share/sbin"
-	echo "You must enable the update_snapshot_entry service to use, and also have the snapper-boot.timer"
-	echo "The daemon file is located at /etc/systemd/system/"
+	echo "install at your own risk and be prepared to tinker with the script, whic is installed at"
+	echo "Run snapper-menu-option -s to get everything setup"
 }
 
 ## arg 1:  the new package version
