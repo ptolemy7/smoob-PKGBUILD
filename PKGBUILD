@@ -14,11 +14,10 @@ install=
 source=("${pkgname}-${pkgver}.tar.gz::https://github.com/ptolemy7/snapper-menu-option/raw/testing/tarball/v${pkgver}.tar.gz")
 package() {
   mkdir -p $pkgdir/etc/systemd/system/
-  mkdir -p $pkgdir/usr/local/sbin/
-  install -D ./systemd_files/* $pkgdir/etc/systemd/system/
-  install -D update_snapshot_entry $pkgdir/usr/local/sbin/snapper-menu-update
+  mkdir -p $pkgdir/etc/$pkgname/
+  mkdir -p $pkgdir/usr/sbin/
+  install -D smoob.service $pkgdir/etc/systemd/system/
+  install -D smoob $pkgdir/usr/sbin/snapper-menu-option
 }
-# md5sums=('62fe367b708cbe8f11ffe77dddfbc0e9')
 
-
-md5sums=('7520dabe76b0d555fa667cb5859e2659')
+md5sums=('6764bc0e91df4baab843e9992ab1d340')
