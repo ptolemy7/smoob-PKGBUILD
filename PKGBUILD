@@ -1,6 +1,6 @@
 #Maintainer: Dalton Sconce <dsconce@protonmail.com>
 #packager='Dalton Sconce <dsconce@protonmail.com.invalid>'
-pkgname=snapper-menu-option
+pkgname=smoob
 pkgver=1.1.0
 pkgrel=1
 epoch=
