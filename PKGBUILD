@@ -19,3 +19,4 @@ package() {
   install -D smoob $pkgdir/usr/bin/
 }
 
+md5sums=('a4139bdc8096c94222c6d985755f2757')
